@@ -1,2 +1,2 @@
-# vika-yura.github.io
-wedding site
+# MarininaYchil.github.io
+First attempt
