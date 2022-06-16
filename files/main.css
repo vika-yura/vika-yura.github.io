@@ -20,7 +20,7 @@ section.section-banner .banner-content {
 
 section.section-banner .banner-content .banner-image:after {
     content: '';
-    background: rgba(0, 0, 0, 0.59);
+    background: rgba(0, 0, 0, 0.37);
     position: absolute;
     top: 0;
     width: 100%;
@@ -46,12 +46,14 @@ section.section-banner .banner-content .banner-image {
     overflow: hidden;
 }
 
-section.section-banner .banner-content .banner-image {
-    height: 100vh;
-    background: url(images/20210512_141819.jpg);
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+@media (max-width: 992px) {
+    section.section-banner .banner-content .banner-image {
+        height: 100vh;
+        background: url(images/20210512_141819.jpg);
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
 }
 
 section.section-banner .banner-content .banner-image video {
@@ -183,6 +185,28 @@ div.list-group-item {
     .brthd img {
         max-width: 100px;
     }
+}
+
+section.section.schedule {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #15b9a130;
+}
+
+.section {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.section__title {
+    margin-bottom: 40px;
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.wishes_descr {
+    font-size: 20px;
 }
 
 .text-inner {
@@ -479,6 +503,12 @@ section.section-banner .banner-content .banner-slogan {
     font-weight: 300;
     word-wrap: break-word;
     text-align: left;
+}
+
+@media (max-width: 992px) {
+    .schedule_item__text {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 992px) {
