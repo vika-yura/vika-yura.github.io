@@ -38,6 +38,13 @@ section.section-banner .banner-content .banner-slogan {
 }
 
 
+section.section-banner .banner-content .banner-image {
+    height: 100vh;
+    background: url(images/20201104_161242.jpg);
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
 
 section.section-banner .banner-content .banner-image {
     height: 100vh;
@@ -111,8 +118,8 @@ section.section-banner .banner-content .banner-image video {
 }
 
 /*.modal-dialog {*/
-    /*min-width: 100%;*/
-    /*margin: 0;*/
+/*min-width: 100%;*/
+/*margin: 0;*/
 /*}*/
 
 div.list-group-item {
@@ -156,10 +163,42 @@ div.list-group-item {
     color: #a4e3ff;
 }
 
-.brthd img{
+.brthd img {
     display: block;
     max-width: 250px;
     margin: 0 auto;
+}
+
+@media (max-width: 992px) {
+    .brthd {
+        font-size: 24px;
+        margin-right: 0;
+        bottom: 60px;
+        left: 20px;
+        right: auto;
+        top: auto;
+    }
+
+
+    .brthd img {
+        max-width: 100px;
+    }
+}
+
+.text-inner {
+    font-size: 20px;
+}
+
+.text-inner span {
+    font-size: 70px;
+}
+
+section.section-banner .banner-content .banner-slogan {
+    font-size: 20px;
+    top: 20px;
+    transform: none;
+}
+
 }
 
 .card-img-top {
@@ -410,6 +449,12 @@ div.list-group-item {
     font-weight: 300;
     border-bottom: 1px solid #c1c1c1;
     word-wrap: break-word
+}
+
+@media (max-width: 992px) {
+    .schedule_item__title {
+        font-size: 24px;
+    }
 }
 
 @media (min-width: 992px) {
