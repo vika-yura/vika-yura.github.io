@@ -6,8 +6,26 @@
 section.section-banner {
     padding: 0;
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 70px);
     overflow: hidden;
+}
+
+
+.qwe {
+    height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.qwe img{
+    max-height: 100%;
+    width: auto;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
+.card-title {
+    white-space: nowrap;
 }
 
 section.section-banner .banner-content {
@@ -39,7 +57,7 @@ section.section-banner .banner-content .banner-slogan {
 
 
 section.section-banner .banner-content .banner-image {
-    height: 100vh;
+    height: calc(100vh - 70px);
     background: url(images/20201104_161242.jpg);
     background-size: cover;
     background-position: center;
@@ -48,7 +66,7 @@ section.section-banner .banner-content .banner-image {
 
 @media (max-width: 992px) {
     section.section-banner .banner-content .banner-image {
-        height: 100vh;
+        height: calc(100vh - 70px);
         background: url(images/20210512_141819.jpg);
         background-size: cover;
         background-position: center;
@@ -60,12 +78,12 @@ section.section-banner .banner-content .banner-image video {
     position: absolute;
     width: 100%;
     object-fit: cover;
-    height: 100vh;
+    height: calc(100vh - 70px);
     min-height: 100%;
 }
 
-.socials .sidebar-socials {
-    margin-bottom: 25px;
+.socials .sidebar-socials img{
+    width: 40px;
 }
 
 .socials.fixed.show {
@@ -103,26 +121,19 @@ section.section-banner .banner-content .banner-image video {
 }
 
 .socials:not(.fixed) {
-    position: absolute;
-    bottom: 35px;
-    right: 54px;
-    -webkit-transition: .5s ease-in-out;
-    -moz-transition: .5s ease-in-out;
-    -o-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    transform: translateX(0px);
-    -webkit-transform: translateX(0px);
-    -moz-transform: translateX(0px);
-    -ms-transform: translateX(0px);
-    -o-transform: translateX(0px);
-    opacity: 1;
-    visibility: visible;
+    position: fixed;
+    right: 0;
+    background-color: #374d6b;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+    height: 70px;
 }
 
-/*.modal-dialog {*/
-/*min-width: 100%;*/
-/*margin: 0;*/
-/*}*/
 
 div.list-group-item {
     width: 50%;
@@ -185,10 +196,28 @@ div.list-group-item {
     .brthd img {
         max-width: 100px;
     }
+
+    .text-inner {
+        font-size: 20px;
+    }
+
+    .text-inner span {
+        font-size: 70px;
+    }
+
+    section.section-banner .banner-content .banner-slogan {
+        font-size: 20px;
+        top: 20px;
+        transform: none;
+    }
+
+    .card-img-top {
+        max-height: 200px;
+    }
 }
 
 section.section.schedule {
-    height: 100vh;
+    height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     background-color: #15b9a130;
@@ -199,6 +228,10 @@ section.section.schedule {
     background-color: white;
 }
 
+.section.wishes {
+    padding-bottom: 100px;
+}
+
 .section__title {
     margin-bottom: 40px;
     font-weight: 900;
@@ -207,26 +240,6 @@ section.section.schedule {
 
 .wishes_descr {
     font-size: 20px;
-}
-
-.text-inner {
-    font-size: 20px;
-}
-
-.text-inner span {
-    font-size: 70px;
-}
-
-section.section-banner .banner-content .banner-slogan {
-    font-size: 20px;
-    top: 20px;
-    transform: none;
-}
-
-}
-
-.card-img-top {
-    max-height: 200px;
 }
 
 .badge {
@@ -288,7 +301,7 @@ section.section-banner .banner-content .banner-slogan {
     .schedule_block:before {
         width: 2px;
         height: 100%;
-        background-color: #c1c1c1
+        background-color: #15b9a1
     }
 
     .schedule_block:before, .schedule_block:first-child:after {
@@ -303,7 +316,7 @@ section.section-banner .banner-content .banner-slogan {
         top: 0;
         width: 12px;
         height: 12px;
-        background-color: #f5aec0;
+        background-color: #15b9a1;
         border-radius: 50%
     }
 
@@ -471,7 +484,7 @@ section.section-banner .banner-content .banner-slogan {
     font-size: 18px;
     line-height: 1;
     font-weight: 300;
-    border-bottom: 1px solid #c1c1c1;
+    border-bottom: 1px solid #15b9a1;
     word-wrap: break-word
 }
 
