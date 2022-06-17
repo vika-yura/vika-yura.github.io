@@ -17,11 +17,53 @@ section.section-banner {
     text-align: center;
 }
 
-.qwe img{
+.qwe img {
     max-height: 100%;
     width: auto;
-    margin-top: 50%;
-    transform: translateY(-50%);
+}
+
+@media (min-width: 992px) {
+    .qwe img {
+        margin-top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (min-width: 992px) {
+    .modal.show .modal-dialog {
+        max-width: 70%;
+    }
+}
+
+.selected-wish-modal {
+    font-size: 24px;
+    align-items: center;
+}
+
+.selected-wish-modal .img-wish {
+
+    margin: 20px auto;
+    max-height: 200px;
+    display: block;
+
+}
+
+
+@media (max-width: 992px) {
+    .selected-wish-modal .img-wish {
+        display: none;
+    }
+
+    .selected-wish-modal .img-wish {
+
+        max-height: 300px;
+
+    }
+}
+
+.selected-wish-btn a {
+    color: white;
+
 }
 
 .card-title {
@@ -82,7 +124,7 @@ section.section-banner .banner-content .banner-image video {
     min-height: 100%;
 }
 
-.socials .sidebar-socials img{
+.socials .sidebar-socials img {
     width: 40px;
 }
 
@@ -186,9 +228,8 @@ div.list-group-item {
     .brthd {
         font-size: 24px;
         margin-right: 0;
-        bottom: 60px;
-        left: 20px;
-        right: auto;
+        bottom: 100px;
+        right: 20px;
         top: auto;
     }
 
