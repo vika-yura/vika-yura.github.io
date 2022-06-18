@@ -29,7 +29,7 @@ section.section-banner {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
     .modal.show .modal-dialog {
         max-width: 70%;
     }
@@ -49,7 +49,7 @@ section.section-banner {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 768px) {
     .selected-wish-modal .img-wish {
         display: none;
     }
@@ -224,15 +224,54 @@ div.list-group-item {
     margin: 0 auto;
 }
 
+.card-body {
+    position: relative;
+}
+
+.card-body .product-link {
+    display: none;
+}
+
+.card-body:hover .product-link {
+    display: block;
+}
+
+.product-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0, .57);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.product-link:hover {
+    color: white;
+}
+
+.product-link span {
+    display: block;
+    margin-top: 50%;
+    transform: translateY(-50%);
+}
+
 @media (max-width: 992px) {
     .brthd {
-        font-size: 24px;
         margin-right: 0;
         bottom: 100px;
         right: 20px;
         top: auto;
     }
+}
 
+@media (max-width: 768px) {
+    .brthd {
+        font-size: 24px;
+    }
 
     .brthd img {
         max-width: 100px;
@@ -280,7 +319,7 @@ section.section.schedule {
 }
 
 .wishes_descr {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .badge {
