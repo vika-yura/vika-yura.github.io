@@ -27,13 +27,6 @@ section.section-banner {
     width: auto;
 }
 
-@media (min-width: 992px) {
-    .qwe img {
-        margin-top: 50%;
-        transform: translateY(-50%);
-    }
-}
-
 @media (min-width: 768px) {
     .modal.show .modal-dialog {
         max-width: 70%;
