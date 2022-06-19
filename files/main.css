@@ -226,6 +226,36 @@ div.list-group-item {
     display: none;
 }
 
+.card.booked .card-body .product-link {
+    display: flex;
+}
+
+.card-body .product-link .selected {
+    display: none;
+}
+
+.card.booked .card-body .product-link .selected {
+    display: none;
+}
+
+.card.booked .card-body .product-link .card-img-top {
+    width: 100px;
+    height: 100px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.card.booked .card-body .product-link .open-link {
+    display: none;
+}
+
+.card.booked .card-body .product-link .selected {
+    display: block;
+}
+
 .card-body:hover .product-link {
     display: flex;
 }
@@ -324,13 +354,6 @@ section.section.schedule {
     position: absolute;
     right: 20px;
     top: 20px;
-}
-
-.booked {
-    opacity: .5;
-}
-
-.quizz-answers {
 }
 
 .quizz-answers-item {
