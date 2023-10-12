@@ -18,16 +18,19 @@
 }
 
 .top_image {
-  background-image: url(../image/background.jpg);
-  height: 40vh;
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  border-color: transparent;
-  border-style: solid;
+  /*background-image: url(../image/background.jpg);*/
+  /*height: 600px;*/
+  /*background-position: center center;*/
+  /*background-size: cover;*/
+  /*background-repeat: no-repeat;*/
 }
 
 .main_image {
+  background-image: url(../image/background.jpg);
+  height: 600px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
@@ -56,10 +59,7 @@
 }
 
 .link {
-  animation: sbs-568815682-1667246996719 2s infinite linear;
-  backface-visibility: hidden;
-  margin: 10px;
-  width: 100%;
+
 }
 
 .link_a {
